@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Startp-Observer</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!-- Toastr style -->
+      <link href="asset/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+      <!-- Gritter -->
+      <link href="asset/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+      <link href="asset/css/animate.css" rel="stylesheet">
+      <link href="asset/css/style.css" rel="stylesheet">
+      <link href="asset/css/mystyle.css" rel="stylesheet">
+
+   </head>
+   <body>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav" id="side-menu">
+                  <div class="logo-header">
+                    <img src="assets/dashboard-assets/Startup Observer.png" class="img-responsive" height="">
+                  </div>
+                  <li class="nav-header">
+                     <div class="dropdown profile-element">
+                        <span>
+                        <img alt="image" class="img-circle" src="assets/dashboard-assets/1956 copy.png" />
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> 
+                            <span class="block m-t-xs" style="color:white"> 
+                                <strong class="font-bold"> <b> JOHN DOE </b>
+                            </strong>
+                        </span>
+                         <span class="text-muted text-xs block" style="color:white">
+                            ABC Capital 
+                        </span>
+                        <br>
+                        <span class="text-muted text-xs block">
+                            <i class="fas fa-cog"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </a>
+                     </div>
+                  </li>
+                  <li class="active">
+                     <a href="index.html">
+                        <img src="assets/dashboard-assets/Ebene 11.png" height="18">
+                        <span class="nav-label">Dashboard</span> 
+                    </a>
+                  </li>
+                  <li>
+                     <a href="layouts.html">
+                        <i class="fab fa-readme"></i>
+                        <span class="nav-label">List of all Startups</span> 
+                     </a>    
+                  </li>
+                  <li>
+                     <a href="mailbox.html">
+                         <i class="far fa-hourglass"></i> 
+                         <span class="nav-label">Open request startups </span>
+                    </a>
+                  </li>
+                  <li>
+                     <a href="widgets.html">
+                         <i class="fas fa-inbox"></i> 
+                         <span class="nav-label">My Startups</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+               <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary visible-xs" href="#"><i class="fa fa-bars"></i> </a>
+                  </div>
+                  <ul class="nav navbar-top-links navbar-right">
+                     <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="far fa-bell"></i>  <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                           <li>
+                              <div class="dropdown-messages-box">
+                                 <a href="profile.html" class="pull-left">
+                                 <img alt="image" class="img-circle" src="img/a7.jpg">
+                                 </a>
+                                 <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="divider"></li>
+                           <li>
+                              <div class="dropdown-messages-box">
+                                 <a href="profile.html" class="pull-left">
+                                 <img alt="image" class="img-circle" src="img/a4.jpg">
+                                 </a>
+                                 <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="divider"></li>
+                           <li>
+                              <div class="dropdown-messages-box">
+                                 <a href="profile.html" class="pull-left">
+                                 <img alt="image" class="img-circle" src="img/profile.jpg">
+                                 </a>
+                                 <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="divider"></li>
+                           <li>
+                              <div class="text-center link-block">
+                                 <a href="mailbox.html">
+                                 <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                 </a>
+                              </div>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fas fa-cog"></i> 
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="row  border-bottom white-bg dashboard-header">
+                <div class="col-lg-12">
+                    <h2>Dashboard</h2>
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <strong>Dashboard</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <div class="col-md-8" style="margin-top:0.5em">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5 class="font-bold">Requests</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+                                <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="widget style1 tile-white-bg">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <h4 class="font-bold">Since last Login</h4>
+                                    <h1 class="font-bold">87.500</h1>  
+                                </div>
+                                <div class="col-xs-4 text-right">
+                                    <i class="fa fa-user-friends fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="progress progress-small">
+                                <div style="width: 60%;" class="progress-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="widget style1 tile-white-bg">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <h1 class="font-bold">385</h1> 
+                                        Granted Request 
+                                    </div>
+                                    <div class="col-xs-4 text-right">
+                                        <i class="fa fa-user-plus fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="progress progress-small">
+                                    <div style="width: 60%;" class="progress-bar"></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:2em">
+                    <div class="col-md-6">
+                        <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5 class="font-bold">Startup on Startups Observer</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#">Config option 1</a>
+                                            </li>
+                                            <li><a href="#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div class="spotlight-header">
+                                    <h2 class="font-bold">Spotlight</h2>
+                                </div>
+                                <div class="row">
+                                    <br>
+                                    <div class="col-xs-5 col-sm-4">
+                                        <img src="assets/dashboard-assets/Gruppe 13 copy.png" alt="">
+                                    </div>
+                                    <div class="col-xs-7 col-sm-7">
+                                        <h2 class="font-bold" style="padding-top:2em">TECHWOLF</h2>
+                                    </div>
+                                </div>    
+                                <div class="row" style="margin-top:1.5em">
+                                    <div class="col-xs-6 font-bold">
+                                        <h3>Sector: Deeptech</h3> 
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h3>Location: Munich, Germany</h3> 
+                                    </div>
+                                </div>
+                                <p class="font-bold" style="margin-top:1em">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                                </p>
+
+                                <p class="font-bold" style="margin-top:1em">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+
+                                <p>
+                                    <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row" style="margin-top:14em">
+               <div class="col-lg-12">
+                  <div class="wrapper wrapper-content">
+                     <div class="row">
+                     </div>
+                  </div>
+                  <div class="footer">
+                     <div class="pull-right">
+                        <strong>Help | Legal</strong>.
+                     </div>
+                     <div>
+                        <strong>Copyright 2017 Startup Observer</strong> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Mainly scripts -->
+    <script src="asset/js/jquery-2.1.1.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="asset/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="asset/js/inspinia.js"></script>
+    <script src="asset/js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="asset/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="asset/js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script> -->
+
+   </body>
+</html>
+
+<script>
+    window.onload = function () {
+
+    var chart = new CanvasJS.Chart("chartContainer1", {
+        exportEnabled: true,
+        animationEnabled: true,
+        title:{
+            text: ""
+        },
+        subtitles: [{
+            text: ""
+        }], 
+        axisX: {
+            title: "States"
+        },
+        toolTip: {
+            shared: true
+        },
+        legend: {
+            cursor: "pointer",
+            itemclick: toggleDataSeries
+        },
+        data: [{
+            type: "column",
+            name: "Open",
+            showInLegend: true,      
+            yValueFormatString: "#,##0.# Units",
+            dataPoints: [
+                { label: "January",  y: 19034.5 },
+                { label: "Febuary",  y: 20088 },
+                { label: "March", y: 20015 },
+                { label: "April", y: 25342 },
+                { label: "May",  y: 28234 }
+            ]
+        },
+        {
+            type: "column",
+            name: "Granted",
+            axisYType: "secondary",
+            showInLegend: true,
+            yValueFormatString: "#,##0.# Units",
+            dataPoints: [
+                { label: "January", y: 210.5 },
+                { label: "Febuary", y: 135 },
+                { label: "March", y: 425 },
+                { label: "April", y: 130 },
+                { label: "May", y: 528 }
+            ]
+        }]
+    });
+    chart.render();
+
+    function toggleDataSeries(e) {
+        if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else {
+            e.dataSeries.visible = true;
+        }
+        e.chart.render();
+    }
+
+    }
+var chart = new CanvasJS.Chart("chartContainer2",
+    {
+        animationEnabled: true,
+        title: {
+            text: "",
+        },
+        data: [
+        {
+            type: "pie",
+            showInLegend: true,
+            dataPoints: [
+                { y: 4181563, legendText: "New Startups", indexLabel: "New Startups" },
+                { y: 2175498, legendText: "Updated Startups", indexLabel: "Updated Startups" },
+                { y: 3125844, legendText: "Deleted Startupd", indexLabel: "Deleted Startupd" },
+            ]
+        },
+        ]
+    });
+chart.render();
+</script>

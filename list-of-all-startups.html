@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Startp-Observer</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link href="asset/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!-- Toastr style -->
+      <link href="asset/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+      <!-- Gritter -->
+      <link href="asset/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+      <link href="asset/css/animate.css" rel="stylesheet">
+      <link href="asset/css/style.css" rel="stylesheet">
+      <link href="asset/css/mystyle.css" rel="stylesheet">
+      <link href="asset/css/style-responsive.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav" id="side-menu">
+                  <div class="logo-header">
+                    <img src="assets/dashboard-assets/Startup Observer.png" class="img-responsive" height="">
+                  </div>
+                  <li class="nav-header">
+                     <div class="dropdown profile-element">
+                        <span>
+                        <img alt="image" class="img-circle" src="assets/dashboard-assets/1956 copy.png" />
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear"> 
+                            <span class="block m-t-xs" style="color:white"> 
+                                <strong class="font-bold"> <b> JOHN DOE </b>
+                            </strong>
+                        </span>
+                         <span class="text-muted text-xs block" style="color:white">
+                            ABC Capital 
+                        </span>
+                        <br>
+                        <span class="text-muted text-xs block">
+                            <i class="fas fa-cog"></i>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </a>
+                     </div>
+                  </li>
+                  <li class="active">
+                     <a href="index.html">
+                        <img src="assets/dashboard-assets/Ebene 11.png" height="18">
+                        <span class="nav-label">Dashboard</span> 
+                    </a>
+                  </li>
+                  <li>
+                     <a href="layouts.html">
+                        <i class="fab fa-readme"></i>
+                        <span class="nav-label">List of all Startups</span> 
+                     </a>    
+                  </li>
+                  <li>
+                     <a href="mailbox.html">
+                         <i class="far fa-hourglass"></i> 
+                         <span class="nav-label">Open request startups </span>
+                    </a>
+                  </li>
+                  <li>
+                     <a href="widgets.html">
+                         <i class="fas fa-inbox"></i> 
+                         <span class="nav-label">My Startups</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+               <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary visible-xs" href="#"><i class="fa fa-bars"></i> </a>
+                  </div>
+                  <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                       <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                           <i class="far fa-bell"></i>  <span class="label label-warning">16</span>
+                       </a>
+                       <ul class="dropdown-menu dropdown-messages">
+                          <li>
+                             <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                   <small class="pull-right">46h ago</small>
+                                   <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                   <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                             </div>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                             <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                   <small class="pull-right text-navy">5h ago</small>
+                                   <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                   <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                             </div>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                             <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                   <small class="pull-right">23h ago</small>
+                                   <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                   <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                             </div>
+                          </li>
+                          <li class="divider"></li>
+                          <li>
+                             <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                             </div>
+                          </li>
+                       </ul>
+                    </li>
+                    <li class="dropdown">
+                       <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                           <i class="fas fa-cog"></i> 
+                       </a>
+                    </li>
+                 </ul>
+               </nav>
+            </div>
+            <div class="row  border-bottom white-bg dashboard-header">
+                <div class="col-lg-12">
+                    <h2 class="font-bold">List of all Startups</h2>
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <strong>List of all Startups</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="row" style="margin-top:7em">
+                    <div class="col-md-1 col-sm-3 col-xs-3 font-bold ">
+                        Sector <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-3 font-bold ">
+                        Technology <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-3 font-bold ">
+                        Orientation <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-3 font-bold ">
+                        Indeed Capital <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="col-md-3 col-sm-5 col-xs-5 current-down font-bold ">
+                        Current State of product / Serice <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4 font-bold newset-down">
+                        Sort By: <span class="font-bold"> Newset</span> <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:5em">
+                    <div class="col-md-6">
+                        <div class="ibox float-e-margins">
+                          <div class="ibox-content">
+                            <div class="row" style="margin-top:-3.5em">
+                                <div class="col-xs-5 col-sm-4">
+                                    <img src="assets/01-list-of-all-startups-assets/B copy.png" alt="">
+                                </div>
+                                <div class="col-xs-6 col-sm-7">
+                                    <h2 class="font-bold" style="padding-top:2em">BAZINGA</h2>
+                                </div>
+                            </div>    
+                            <div class="row" style="margin-top:1.5em">
+                                <div class="col-xs-6 font-bold">
+                                    <h3>Sector: Fentech</h3> 
+                                </div>
+                                <div class="col-xs-6">
+                                    <h3>Location: Frankfurt, Germany</h3> 
+                                </div>
+                            </div>
+                            <p style="margin-top:1em">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            </p>  
+                            <p  style="margin-top:2em">
+                                <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="ibox float-e-margins">
+                        <div class="ibox-content">
+                            <div class="row" style="margin-top:-3.5em">
+                                <div class="col-xs-5 col-sm-4">
+                                    <img src="assets/01-list-of-all-startups-assets/Ex copy.png" alt="">
+                                </div>
+                                <div class="col-xs-6 col-sm-7">
+                                    <h2 class="font-bold" style="padding-top:2em">TECHWOLF</h2>
+                                </div>
+                            </div>    
+                            <div class="row" style="margin-top:1.5em">
+                                <div class="col-xs-6 font-bold">
+                                    <h3>Sector: Marketing</h3> 
+                                </div>
+                                <div class="col-xs-6">
+                                    <h3>Location: Belin, Germany</h3> 
+                                </div>
+                            </div>
+                            <p style="margin-top:1em">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.,
+                            </p>  
+                            <p  style="margin-top:2em">
+                                <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:5em">
+                    <div class="col-md-6">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                            <div class="row" style="margin-top:-3.5em">
+                                <div class="col-xs-5 col-sm-4">
+                                    <img src="assets/01-list-of-all-startups-assets/W copy.png" alt="">
+                                </div>
+                                <div class="col-xs-6 col-sm-7">
+                                    <h2 class="font-bold" style="padding-top:2em">BAZINGA</h2>
+                                </div>
+                            </div>    
+                            <div class="row" style="margin-top:1.5em">
+                                <div class="col-xs-6 font-bold">
+                                    <h3>Sector: LifeStyle</h3> 
+                                </div>
+                                <div class="col-xs-6">
+                                    <h3>Location: Frankfurt, Germany</h3> 
+                                </div>
+                            </div>
+                            <p style="margin-top:1em">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                            </p>  
+                            <p  style="margin-top:2em">
+                                <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ibox float-e-margins">
+                        <div class="ibox-content">
+                            <div class="row" style="margin-top:-3.5em">
+                                <div class="col-xs-5 col-sm-4">
+                                    <img src="assets/01-list-of-all-startups-assets/APPA LOOZA copy.png" alt="">
+                                </div>
+                                <div class="col-xs-6 col-sm-7">
+                                    <h2 class="font-bold" style="padding-top:2em">TECHWOLF</h2>
+                                </div>
+                            </div>    
+                            <div class="row" style="margin-top:1.5em">
+                                <div class="col-xs-6 font-bold">
+                                    <h3>Sector: Social Startup</h3> 
+                                </div>
+                                <div class="col-xs-6">
+                                    <h3>Location: Belin, Germany</h3> 
+                                </div>
+                            </div>
+                            <p style="margin-top:1em">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.,
+                            </p>  
+                            <p  style="margin-top:2em">
+                                <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top:5em">
+                        <div class="col-md-6">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-content">
+                                <div class="row" style="margin-top:-3.5em">
+                                    <div class="col-xs-5 col-sm-4">
+                                        <img src="assets/01-list-of-all-startups-assets/Form 2 copy.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-7">
+                                        <h2 class="font-bold" style="padding-top:2em">HAPPY Paws</h2>
+                                    </div>
+                                </div>    
+                                <div class="row" style="margin-top:1.5em">
+                                    <div class="col-xs-6 font-bold">
+                                        <h3>Sector: Cyberscurity</h3> 
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h3>Location: Berlin, Germany</h3> 
+                                    </div>
+                                </div>
+                                <p style="margin-top:1em">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                </p>  
+                                <p  style="margin-top:2em">
+                                    <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div class="row" style="margin-top:-3.5em">
+                                    <div class="col-xs-5 col-sm-4">
+                                        <img src="assets/01-list-of-all-startups-assets/Ebene 7 copy.png" alt="">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-7">
+                                        <h2 class="font-bold" style="padding-top:2em">TECHWOLF</h2>
+                                    </div>
+                                </div>    
+                                <div class="row" style="margin-top:1.5em">
+                                    <div class="col-xs-6 font-bold">
+                                        <h3>Sector: Healthcare</h3> 
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h3>Location: Karlsrube, Germany</h3> 
+                                    </div>
+                                </div>
+                                <p style="margin-top:1em">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.,
+                                </p>  
+                                <p  style="margin-top:2em">
+                                    <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top:5em">
+                            <div class="col-md-6">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-content">
+                                    <div class="row" style="margin-top:-3.5em">
+                                        <div class="col-xs-5 col-sm-4">
+                                            <img src="assets/01-list-of-all-startups-assets/Rechteck 11 Kopie copy 2.png" alt="">
+                                        </div>
+                                        <div class="col-xs-6 col-sm-7">
+                                            <h2 class="font-bold" style="padding-top:2em">BAZINGA</h2>
+                                        </div>
+                                    </div>    
+                                    <div class="row" style="margin-top:1.5em">
+                                        <div class="col-xs-6 font-bold">
+                                            <h3>Sector: Fentech</h3> 
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h3>Location: Frankfurt, Germany</h3> 
+                                        </div>
+                                    </div>
+                                    <p style="margin-top:1em">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                    </p>  
+                                    <p  style="margin-top:2em">
+                                        <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="ibox float-e-margins">
+                                <div class="ibox-content">
+                                    <div class="row" style="margin-top:-3.5em">
+                                        <div class="col-xs-5 col-sm-4">
+                                            <img src="assets/01-list-of-all-startups-assets/C copy.png" alt="">
+                                        </div>
+                                        <div class="col-xs-6 col-sm-7">
+                                            <h2 class="font-bold" style="padding-top:2em">TECHWOLF</h2>
+                                        </div>
+                                    </div>    
+                                    <div class="row" style="margin-top:1.5em">
+                                        <div class="col-xs-6 font-bold">
+                                            <h3>Sector: Deetptech</h3> 
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <h3>Location: Belin, Germany</h3> 
+                                        </div>
+                                    </div>
+                                    <p style="margin-top:1em">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.,
+                                    </p>  
+                                    <p  style="margin-top:2em">
+                                        <button type="button" class="btn btn-block btn-outline btn-primary font-bold"> <h3><b>More Info</b></h3> </button>
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <div class="row text-center">
+                    <i class="fas fa-chevron-left"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="font-bold"> <u>Page</u>&nbsp;&nbsp; 1 of&nbsp;&nbsp; 13 &nbsp;<i class="fas fa-sort-down"></i></span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="row" style="margin-top:14em">
+                <div class="col-lg-12">
+                   <div class="wrapper wrapper-content">
+                      <div class="row">
+                      </div>
+                   </div>
+                   <div class="footer">
+                      <div class="pull-right">
+                         <strong>Help | Legal</strong>.
+                      </div>
+                      <div>
+                         <strong>Copyright 2017 Startup Observer</strong> 
+                      </div>
+                   </div>
+                </div>
+             </div>
+         </div>
+      </div>
+      <!-- Mainly scripts -->
+      <script src="asset/js/jquery-2.1.1.js"></script>
+      <script src="asset/js/bootstrap.min.js"></script>
+      <script src="asset/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="asset/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+     
+      <!-- Peity -->
+      <script src="asset/js/plugins/peity/jquery.peity.min.js"></script>
+      <script src="asset/js/demo/peity-demo.js"></script>
+      
+      <!-- Custom and plugin javascript -->
+      <script src="asset/js/inspinia.js"></script>
+      <script src="asset/js/plugins/pace/pace.min.js"></script>
+      <!-- jQuery UI -->
+      <script src="asset/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+      <!-- GITTER -->
+      <script src="asset/js/plugins/gritter/jquery.gritter.min.js"></script>
+      <!-- Sparkline -->
+      <script src="asset/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+      <!-- Sparkline demo data  -->
+      <script src="asset/js/demo/sparkline-demo.js"></script>
+      <!-- ChartJS-->
+      <script src="asset/js/plugins/chartJs/Chart.min.js"></script>
+      <!-- Toastr -->
+      <script src="asset/js/plugins/toastr/toastr.min.js"></script>
+      
+   </body>
+</html>

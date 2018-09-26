@@ -1,0 +1,70 @@
+@media only screen and (max-width : 1200px) 
+{   
+    .hotshite
+    {
+        margin-top: 4em;
+    }
+    .startup-sidebar .startup-info
+    {
+        padding:3em -0em 0em 2em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) 
+{
+
+    .current-down
+    {
+        margin-top: 2em;
+    }
+    .newset-down
+    {
+        margin-top:2em
+    } 
+    .startup-sidebar .startup-info
+    {
+        text-align:center;
+        padding:3em -0em 0em 0em;
+    }
+    .heading
+    {
+        text-align: center;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) 
+{
+    .competitor
+    {
+        text-align: center;
+    }
+    .border-right
+    {
+        text-align: center;
+    }
+    .team-details
+    {
+        text-align: center;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) 
+{
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) 
+{
+
+}
+
+@media only screen and (min-width : 479px) 
+{
+}
+
+@media only screen and (min-width : 767px) 
+{
+}
